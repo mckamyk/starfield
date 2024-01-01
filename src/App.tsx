@@ -1,5 +1,5 @@
 import { Canvas } from '@react-three/fiber'
-import { Bloom, EffectComposer } from '@react-three/postprocessing'
+import { Bloom, EffectComposer, Pixelation } from '@react-three/postprocessing'
 import Field from './field'
 
 function App() {
@@ -14,6 +14,7 @@ function App() {
             luminanceSmoothing={.025}
             mipmapBlur
           />
+          <Pixelation />
         </EffectComposer>
       </Canvas>
     </div>

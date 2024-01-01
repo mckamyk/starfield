@@ -9,7 +9,7 @@ export default () => {
   const [stars] = useState<StarType[]>(() => generateStars())
   const ref = useRef<Mesh>(null)
   useFrame((_, delta) => {
-    ref.current?.rotateY(delta / 20)
+    ref.current?.rotateY(delta / 50)
   })
 
   return (
